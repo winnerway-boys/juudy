@@ -1,95 +1,197 @@
+<div align="center">
+
+<img src="assets/juudy-icon.png" alt="Juudy" width="88" height="88">
+
 # Juudy
 
-**CME 股指期货桌面工作台 · macOS**　｜　**A desktop workstation for CME equity-index futures · macOS**
+### 看价格，也看价格背后的成交与结构。
 
-[下载最新版 / Download the latest release](https://github.com/winnerway-boys/juudy/releases/latest)
+**CME 股指期货桌面工作台 · macOS**<br>
+Price, order flow and market structure — in one workspace.
+
+[下载 / Download](https://github.com/winnerway-boys/juudy/releases/latest) · [功能图览 / Product tour](#product-tour) · [开始使用 / Get started](#get-started) · [English](#english)
+
+**MNQ · NQ · MES · ES**　／　**Apple silicon**　／　**中文 · English**
+
+</div>
+
+<a href="assets/screenshots/01-workspace.jpg"><img src="assets/screenshots/01-workspace.jpg" alt="Juudy 实时期货工作台：主图、结构图层与行情信息" width="100%"></a>
+
+<p align="center"><sub>01 / WORKSPACE — 紧凑的深色工作台，把屏幕留给 K 线。点击任意截图查看原图。</sub></p>
+
+Juudy 把实时行情、订单流、ICT 结构和策略研究放在同一张工作台里。先看整体结构，再查看成交细节，也可以把自己的想法交给 AI，生成 Python 策略并放到独立图表中模拟观察。
+
+| 看清市场 | 对照策略 | 验证想法 |
+| :--- | :--- | :--- |
+| Candles · Big Prints · Footprint · CVD | 多图布局 · Trend · FVG · SMC | AI 写 Python · 沙盒检查 · 实时 Sim |
+
+> **截图版本：Juudy 1.2.0（机主版实机）**。公开安装包版本请以 [Releases](https://github.com/winnerway-boys/juudy/releases/latest) 为准；少量设置入口因版本不同而异。图中行情是截图时的市场状态，策略结果标记为 **Sim**，不代表真实成交或收益承诺。
+
+<a id="product-tour"></a>
+
+## 一张工作台，多种观察角度
+
+### 02 · 多图策略工作区 / Multi-chart workspace
+
+<a href="assets/screenshots/02-multi-chart.jpg"><img src="assets/screenshots/02-multi-chart.jpg" alt="Juudy 六宫格策略工作区" width="100%"></a>
+
+主图与策略窗格并排查看。Trend、Order Flow、Big Prints、FVG 和 SMC 可以各自使用不同周期，显示自己的状态、规则条件与模拟信号。需要细看时，单独放大一个窗格。
+
+*Keep price context and several strategy views side by side, with an independent timeframe for each pane.*
+
+### 03 · 把想法变成可运行的策略 / AI Strategy Studio
+
+<a href="assets/screenshots/03-ai-studio.jpg"><img src="assets/screenshots/03-ai-studio.jpg" alt="AI 策略工坊：Python 代码、可调参数、图表预览及校验结果" width="100%"></a>
+
+**描述想法 → 生成 Python → 检查代码 → 应用到实时 K 线。**
+
+代码、参数和预览同屏展示，支持继续提问、解释逻辑和调整参数。检查包括隔离执行、输出格式校验和前缀重算，帮助发现执行错误与部分未来数据问题；不等于策略有效性或收益保证。AI 使用你自己接入的服务商与 API Key。
+
+*Describe an idea, inspect the generated Python, run the checks, then follow its simulated signals on a dedicated live chart.*
+
+## 从成交中读细节
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 04 · Big Prints & Trade Heatmap
+
+<a href="assets/screenshots/04-order-flow.jpg"><img src="assets/screenshots/04-order-flow.jpg" alt="Big Prints 大单气泡与逐价成交热力" width="100%"></a>
+
+大单气泡突出较大的成交，逐价热力呈现成交的分布与主动方向。阈值可调，结合当前周期控制显示密度。方向色统一：主动买为绿，主动卖为红。
+
+*Inspect larger prints and traded volume inside each bar.*
+
+</td>
+<td width="50%" valign="top">
+
+### 05 · CVD & Delta
+
+<a href="assets/screenshots/05-session-cvd.jpg"><img src="assets/screenshots/05-session-cvd.jpg" alt="订单流窗格中的 Volume、Delta 与 CVD 副图" width="100%"></a>
+
+把价格、每根 K 线的 Delta 和累计 CVD 放在同一视野，对照 Divergence 与 Imbalance 标记。计算基于已采集逐笔，缺口不能视为完整成交记录。
+
+*Compare price, bar Delta and cumulative Delta using the trades actually collected.*
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 06 · Volume Profile & Value Area
+
+<a href="assets/screenshots/06-volume-profile.jpg"><img src="assets/screenshots/06-volume-profile.jpg" alt="成交量分布、POC、VAH、VAL 与 VWAP" width="100%"></a>
+
+查看成交集中在哪里，对照 POC、VAH、VAL 与 VWAP。数据不足时保留估算标识，区分实际逐笔分布与基于 K 线的估算。
+
+*Read where volume traded, with value-area levels and estimated-data labels.*
+
+</td>
+<td width="50%" valign="top">
+
+### 07 · ICT Market Structure
+
+<a href="assets/screenshots/07-ict-structure.jpg"><img src="assets/screenshots/07-ict-structure.jpg" alt="SMC 窗格中的 Order Blocks、CHoCH 与流动性参考" width="100%"></a>
+
+把 FVG、Order Blocks、BOS / CHoCH 和流动性参考放回价格结构中观察。图层按需显示，保留业内英文术语，方便交流与复盘。
+
+*Inspect FVG, blocks, structure changes and liquidity references in price context.*
+
+</td>
+</tr>
+</table>
+
+## 看结论，也能看依据
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 08 · Daily Bias · Why
+
+<a href="assets/screenshots/08-daily-bias.jpg"><img src="assets/screenshots/08-daily-bias.jpg" alt="Daily Bias 与 Why 依据抽屉" width="100%"></a>
+
+从 Daily Bias 查看当前规则判断，再展开 Why 阅读依据、技术条件与事件状态。Flip Level 给出结构变化的观察参考，条件变化时判断随之更新。
+
+*Open the reasoning behind the current bias and track its structural flip conditions.*
+
+</td>
+<td width="50%" valign="top">
+
+### 09 · 自定义分析权重 / Bias Mix
+
+<a href="assets/screenshots/09-bias-mix.jpg"><img src="assets/screenshots/09-bias-mix.jpg" alt="Mix 面板中的新闻与技术权重、时间衰减和分类权重" width="100%"></a>
+
+用 Fixed 或 Schedule 配置宏观事件与技术面的占比，并调整事件影响的时间衰减、分类权重和判断阈值。无重大新闻时，界面明确显示 Tech 100%，不强行给新闻凑分。
+
+*Configure the news–technical mix and time decay; see when the result falls back to technical evidence alone.*
+
+</td>
+</tr>
+</table>
+
+### 10 · 指标教学与参数 / Learn the indicators
+
+<a href="assets/screenshots/10-indicator-guide.jpg"><img src="assets/screenshots/10-indicator-guide.jpg" alt="指标说明、分步教学演示与参数控件" width="100%"></a>
+
+不熟悉一个指标时，直接打开它的说明，结合分步演示理解图形、数值与状态，再按需要调整参数。教学演示有 **Demo** 标识，与真实行情分开。
+
+*Learn the visual language of an indicator with an in-app, step-by-step demo before adjusting its parameters.*
 
 ---
 
-## 中文
+<a id="get-started"></a>
 
-### Juudy 是什么
-Juudy 是一款看 CME 股指期货（MNQ / NQ / MES / ES）的桌面软件，把行情、订单流和交易结构放在一个画面里：
+## 开始使用
 
-- **实时行情**：K 线（1 秒到 4 小时）与逐笔成交
-- **订单流**：Big Prints 大单气泡、足迹（Footprint）、Session CVD、Delta、Cluster Search
-- **成交分布**：Volume Profile、价值区（POC / VAH / VAL）、VWAP、关键价位（PDH / PDL / ONH / ONL 等）
-- **ICT 结构**：OB / BB / MB / RB、FVG、MSS / BOS / CHoCH、NWOG / NDOG / ORG、DOL
-- **今日大势（Daily Bias）**：偏多 / 偏空 / 中性，附 Why 依据和一段总结
-- **策略窗格**：趋势、订单流、FVG、SMC 等内置策略同屏扫描，进出场信号均为**模拟（Sim）**
-- **AI 策略工坊**：用中文描述一个想法，AI 生成策略并在实时 K 线上模拟
-- **经济日历**：重大数据公布时间与实际值
+| 准备 | 要求 |
+| :--- | :--- |
+| Mac | macOS 15 及以上，Apple 芯片（M1 及以后） |
+| CME 行情 | **TopstepX 账户 + ProjectX API 订阅**；当前不支持其他公司的账户 |
+| AI 工坊 | 自己的 AI API Key，例如 DeepSeek、智谱 GLM、火山方舟、通义千问 |
 
-> 软件只看行情、不下单。所有策略信号都是模拟，仅供研究和学习，**不构成投资建议**。期货交易风险很高。
+1. 从 [Releases](https://github.com/winnerway-boys/juudy/releases/latest) 下载 DMG，打开后把 Juudy 拖进「应用程序」。
+2. 首次打开如被 macOS 拦截，可在「系统设置 → 隐私与安全性」查看提示，确认文件来自本仓库后点「仍要打开」。
+3. 按应用中的向导接入 AI 和 ProjectX，步骤中附有看图教程。未接入的功能暂不可用，可稍后补配。
 
-### 系统要求
-- macOS 15 及以上，Apple 芯片（M1 及以后）的 Mac
-- Windows 版开发中
+GitHub 无法访问或下载较慢时，请使用适合自己网络环境的访问方式。每个安装包的 SHA256 均列在 Release 中，可用 `shasum -a 256 Juudy-版本号.dmg` 核对。
 
-### 使用前要准备
-1. **行情**：TopstepX 账户，并订阅 ProjectX API。行情**只支持 TopstepX 账户**；Lucid、Apex、Tradeify、TakeProfitTrader 等其他公司的账户用不了。
-2. **AI**：一个 AI 服务的 API Key，例如 DeepSeek、智谱 GLM、火山方舟、通义千问。
+### 试用、授权与反馈
 
-### 下载与安装
-1. 在 [Releases](https://github.com/winnerway-boys/juudy/releases) 下载 `Juudy-版本号.dmg`。GitHub 打不开或下载很慢：能直连就直连，连不上用科学上网。
-2. 双击 dmg，把 Juudy 拖进「应用程序」。
-3. 第一次打开如果提示无法打开：打开「系统设置 → 隐私与安全性」，点「仍要打开」。
-4. 按软件里的设置向导填好 AI 和 ProjectX，向导里有看图教程。
+每个版本可免费试用 **14 天**。到期后，将软件内的**申请码**发邮件至 **996032777@qq.com**，收到解锁码后粘贴到软件中。解锁码仅适用于申请时的那台 Mac 和那个版本。
 
-### 试用与授权
-- 每个版本可以免费试用 **14 天**。
-- 到期后，把软件里显示的**申请码**发邮件到 **996032777@qq.com**，收到回信后把**解锁码**粘进软件即可。
-- 解锁码只对申请的那台 Mac、那个版本有效。
+问题反馈：应用内「设置 → 问题反馈」，或邮件 **996032777@qq.com**。Windows 版开发中。
 
-### 问题反馈
-软件里「设置 → 问题反馈」，或发邮件到 **996032777@qq.com**。
+<a id="english"></a>
 
-### 校验
-每个安装包都在 Releases 里附了 SHA256，下载后可以用 `shasum -a 256 Juudy-版本号.dmg` 核对。
-
----
-
-## English
-
-### What is Juudy
-Juudy is a desktop app for CME equity-index futures (MNQ / NQ / MES / ES) that puts price, order flow and market structure on one screen:
-
-- **Live market data**: candles (1 s to 4 h) and every trade print
-- **Order flow**: Big Prints bubbles, Footprint, Session CVD, Delta, Cluster Search
-- **Volume profile**: POC / VAH / VAL, VWAP, key levels (PDH / PDL / ONH / ONL …)
-- **ICT structure**: OB / BB / MB / RB, FVG, MSS / BOS / CHoCH, NWOG / NDOG / ORG, DOL
-- **Daily Bias**: bullish / bearish / neutral with the reasons and a short summary
-- **Strategy panes**: built-in strategies (Trend, Order Flow, FVG, SMC …) scanning side by side; all entries and exits are **simulated (Sim)**
-- **AI Strategy Studio**: describe an idea, AI writes the strategy and simulates it on live candles
-- **Economic calendar**: release times and actual values
-
-> Juudy only reads market data and never places orders. All strategy signals are simulated, for research and learning only, and are **not investment advice**. Futures trading carries high risk.
-
-### Requirements
-- macOS 15 or later on an Apple-silicon Mac (M1 or newer)
-- A Windows version is in development
+<details>
+<summary><strong>English · Requirements, installation and licensing</strong></summary>
 
 ### What you need
-1. **Market data**: a TopstepX account with a ProjectX API subscription. Only **TopstepX accounts** are supported; accounts from Lucid, Apex, Tradeify, TakeProfitTrader and other firms do not work.
-2. **AI**: an API key from an AI provider (e.g. DeepSeek, Zhipu GLM, Volcano Ark, Qwen).
+
+- macOS 15 or later on an Apple-silicon Mac (M1 or newer).
+- A **TopstepX account with a ProjectX API subscription**. Other firms' accounts, including Lucid, Apex, Tradeify and TakeProfitTrader, are not supported.
+- Your own AI API key for the AI Strategy Studio, for example DeepSeek, Zhipu GLM, Volcano Ark or Qwen.
 
 ### Install
-1. Download `Juudy-<version>.dmg` from [Releases](https://github.com/winnerway-boys/juudy/releases).
-2. Open the dmg and drag Juudy into Applications.
-3. If macOS says it cannot be opened: System Settings → Privacy & Security → **Open Anyway**.
-4. Follow the in-app setup wizard (with an illustrated guide) to connect AI and ProjectX.
 
-### Trial and license
-- Every version includes a **14-day free trial**.
-- After the trial, email the **request code** shown in the app to **996032777@qq.com** and paste the **unlock code** from the reply.
-- An unlock code works only on the Mac and the version it was issued for.
+1. Download the DMG from [Releases](https://github.com/winnerway-boys/juudy/releases/latest) and drag Juudy into Applications.
+2. If macOS blocks the first launch, check System Settings → Privacy & Security. Confirm that the file came from this repository before choosing **Open Anyway**.
+3. Follow the illustrated in-app setup wizard. Connections can be completed later; features that need an unconfigured service remain unavailable.
 
-### Feedback
-In the app: Settings → Feedback, or email **996032777@qq.com**.
+Screenshots show the **1.2.0 owner build**. Check Releases for the publicly available installer version. The screenshots are product demonstrations, not a performance record. All strategy results are **simulated**.
 
-### Checksums
-Each installer in Releases comes with its SHA256 (`shasum -a 256 Juudy-<version>.dmg`).
+### Trial and support
+
+Each version includes a **14-day free trial**. Email the in-app request code to **996032777@qq.com** for an unlock code valid for that Mac and version. Use Settings → Feedback or the same email for support. A Windows version is in development.
+
+Every Release includes the installer's SHA256 checksum. Verify it with `shasum -a 256 Juudy-<version>.dmg`.
+
+</details>
 
 ---
 
-© 2026 Juudy. 保留所有权利 / All rights reserved. 本仓库只提供安装包与介绍，不含源代码 / This repository contains installers and documentation only — no source code. 详见 / See [LICENSE](LICENSE).
+<sub>Juudy 仅读取行情，不执行实盘下单。所有策略信号均为 Sim，仅供研究和学习，不构成投资建议。期货交易风险很高。 / Juudy reads market data and does not place live orders. All strategy signals are simulated, for research and learning only, not investment advice. Futures trading carries high risk.</sub>
+
+<sub>© 2026 Juudy. 本仓库只提供安装包与产品介绍，不包含应用源代码。 / Installers and product documentation only; no application source code. All rights reserved. See [LICENSE](LICENSE).</sub>
