@@ -15,9 +15,9 @@ Price, order flow and market structure — in one workspace.
 
 </div>
 
-<a href="assets/screenshots/01-workspace.jpg"><img src="assets/screenshots/01-workspace.jpg" alt="Juudy 实时期货工作台：主图、结构图层与行情信息" width="100%"></a>
+<a href="assets/screenshots/02-multi-chart.jpg"><img src="assets/screenshots/02-multi-chart.jpg" alt="Juudy 六宫格：主图、Trend、Order Flow、Big Prints、FVG 与 SMC 同屏" width="100%"></a>
 
-<p align="center"><sub>01 / WORKSPACE — 紧凑的深色工作台，把屏幕留给 K 线。点击任意截图查看原图。</sub></p>
+<p align="center"><sub>01 / SIX-CHART WORKSPACE — 六宫格，一屏对照主图、Trend、Order Flow、Big Prints、FVG 与 SMC。点击截图查看高清原图。</sub></p>
 
 Juudy 把实时行情、订单流、ICT 结构和策略研究放在同一张工作台里。先看整体结构，再查看成交细节，也可以把自己的想法交给 AI，生成 Python 策略并放到独立图表中模拟观察。
 
@@ -31,13 +31,13 @@ Juudy 把实时行情、订单流、ICT 结构和策略研究放在同一张工�
 
 ## 一张工作台，多种观察角度
 
-### 02 · 多图策略工作区 / Multi-chart workspace
+### 02 · 主图与策略并排 / Price & strategy side by side
 
-<a href="assets/screenshots/02-multi-chart.jpg"><img src="assets/screenshots/02-multi-chart.jpg" alt="Juudy 六宫格策略工作区" width="100%"></a>
+<a href="assets/screenshots/01-workspace.jpg"><img src="assets/screenshots/01-workspace.jpg" alt="Juudy 双图工作区：行情主图与 AI 策略窗格并排" width="100%"></a>
 
-主图与策略窗格并排查看。Trend、Order Flow、Big Prints、FVG 和 SMC 可以各自使用不同周期，显示自己的状态、规则条件与模拟信号。需要细看时，单独放大一个窗格。
+从六宫格全景到双图专注视野，按需要选择布局。主图与策略窗格各自使用不同周期，显示自己的状态、规则条件与模拟信号；图中右侧是 AI 生成的 EMA 策略。需要细看时，单独放大一个窗格。
 
-*Keep price context and several strategy views side by side, with an independent timeframe for each pane.*
+*Move between the six-chart overview and a focused side-by-side workspace, with an independent timeframe for each pane.*
 
 ### 03 · 把想法变成可运行的策略 / AI Strategy Studio
 
