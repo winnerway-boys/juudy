@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="assets/juudy-icon.png" alt="Juudy" width="88" height="88">
-
 # Juudy
 
 ### 看价格，也看价格背后的成交与结构。
