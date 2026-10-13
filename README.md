@@ -15,7 +15,7 @@ Price, order flow and market structure — in one workspace.
 
 </div>
 
-<a href="assets/screenshots/02-multi-chart.jpg"><img src="assets/screenshots/02-multi-chart.jpg" alt="Juudy 六宫格：主图、Trend、Order Flow、Big Prints、FVG 与 SMC 同屏" width="100%"></a>
+<a href="assets/screenshots/02-multi-chart-ui.jpg"><img src="assets/screenshots/02-multi-chart-ui.jpg" alt="Juudy 六宫格：主图、Trend、Order Flow、Big Prints、FVG 与 SMC 同屏" width="100%"></a>
 
 <p align="center"><sub>01 / SIX-CHART WORKSPACE — 六宫格，一屏对照主图、Trend、Order Flow、Big Prints、FVG 与 SMC。点击截图查看高清原图。</sub></p>
 
@@ -33,7 +33,7 @@ Juudy 把实时行情、订单流、ICT 结构和策略研究放在同一张工�
 
 ### 02 · 主图与策略并排 / Price & strategy side by side
 
-<a href="assets/screenshots/01-workspace.jpg"><img src="assets/screenshots/01-workspace.jpg" alt="Juudy 双图工作区：行情主图与 AI 策略窗格并排" width="100%"></a>
+<a href="assets/screenshots/01-workspace-ui.jpg"><img src="assets/screenshots/01-workspace-ui.jpg" alt="Juudy 双图工作区：行情主图与 AI 策略窗格并排" width="100%"></a>
 
 从六宫格全景到双图专注视野，按需要选择布局。主图与策略窗格各自使用不同周期，显示自己的状态、规则条件与模拟信号；图中右侧是 AI 生成的 EMA 策略。需要细看时，单独放大一个窗格。
 
@@ -41,7 +41,7 @@ Juudy 把实时行情、订单流、ICT 结构和策略研究放在同一张工�
 
 ### 03 · 把想法变成可运行的策略 / AI Strategy Studio
 
-<a href="assets/screenshots/03-ai-studio.jpg"><img src="assets/screenshots/03-ai-studio.jpg" alt="AI 策略工坊：Python 代码、可调参数、图表预览及校验结果" width="100%"></a>
+<a href="assets/screenshots/03-ai-studio-ui.jpg"><img src="assets/screenshots/03-ai-studio-ui.jpg" alt="AI 策略工坊：Python 代码、可调参数、图表预览及校验结果" width="100%"></a>
 
 **描述想法 → 生成 Python → 检查代码 → 应用到实时 K 线。**
 
@@ -57,7 +57,7 @@ Juudy 把实时行情、订单流、ICT 结构和策略研究放在同一张工�
 
 ### 04 · Big Prints & Trade Heatmap
 
-<a href="assets/screenshots/04-order-flow.jpg"><img src="assets/screenshots/04-order-flow.jpg" alt="Big Prints 大单气泡与逐价成交热力" width="100%"></a>
+<a href="assets/screenshots/04-order-flow-ui.jpg"><img src="assets/screenshots/04-order-flow-ui.jpg" alt="Big Prints 大单气泡与逐价成交热力" width="100%"></a>
 
 大单气泡突出较大的成交，逐价热力呈现成交的分布与主动方向。阈值可调，结合当前周期控制显示密度。方向色统一：主动买为绿，主动卖为红。
 
@@ -68,7 +68,7 @@ Juudy 把实时行情、订单流、ICT 结构和策略研究放在同一张工�
 
 ### 05 · CVD & Delta
 
-<a href="assets/screenshots/05-session-cvd.jpg"><img src="assets/screenshots/05-session-cvd.jpg" alt="订单流窗格中的 Volume、Delta 与 CVD 副图" width="100%"></a>
+<a href="assets/screenshots/05-session-cvd-ui.jpg"><img src="assets/screenshots/05-session-cvd-ui.jpg" alt="订单流窗格中的 Volume、Delta 与 CVD 副图" width="100%"></a>
 
 把价格、每根 K 线的 Delta 和累计 CVD 放在同一视野，对照 Divergence 与 Imbalance 标记。计算基于已采集逐笔，缺口不能视为完整成交记录。
 
@@ -81,7 +81,7 @@ Juudy 把实时行情、订单流、ICT 结构和策略研究放在同一张工�
 
 ### 06 · Volume Profile & Value Area
 
-<a href="assets/screenshots/06-volume-profile.jpg"><img src="assets/screenshots/06-volume-profile.jpg" alt="成交量分布、POC、VAH、VAL 与 VWAP" width="100%"></a>
+<a href="assets/screenshots/06-volume-profile-ui.jpg"><img src="assets/screenshots/06-volume-profile-ui.jpg" alt="成交量分布、POC、VAH、VAL 与 VWAP" width="100%"></a>
 
 查看成交集中在哪里，对照 POC、VAH、VAL 与 VWAP。数据不足时保留估算标识，区分实际逐笔分布与基于 K 线的估算。
 
@@ -92,7 +92,7 @@ Juudy 把实时行情、订单流、ICT 结构和策略研究放在同一张工�
 
 ### 07 · ICT Market Structure
 
-<a href="assets/screenshots/07-ict-structure.jpg"><img src="assets/screenshots/07-ict-structure.jpg" alt="SMC 窗格中的 Order Blocks、CHoCH 与流动性参考" width="100%"></a>
+<a href="assets/screenshots/07-ict-structure-ui.jpg"><img src="assets/screenshots/07-ict-structure-ui.jpg" alt="SMC 窗格中的 Order Blocks、CHoCH 与流动性参考" width="100%"></a>
 
 把 FVG、Order Blocks、BOS / CHoCH 和流动性参考放回价格结构中观察。图层按需显示，保留业内英文术语，方便交流与复盘。
 
@@ -110,7 +110,7 @@ Juudy 把实时行情、订单流、ICT 结构和策略研究放在同一张工�
 
 ### 08 · Daily Bias · Why
 
-<a href="assets/screenshots/08-daily-bias.jpg"><img src="assets/screenshots/08-daily-bias.jpg" alt="Daily Bias 与 Why 依据抽屉" width="100%"></a>
+<a href="assets/screenshots/08-daily-bias-ui.jpg"><img src="assets/screenshots/08-daily-bias-ui.jpg" alt="Daily Bias 与 Why 依据抽屉" width="100%"></a>
 
 从 Daily Bias 查看当前规则判断，再展开 Why 阅读依据、技术条件与事件状态。Flip Level 给出结构变化的观察参考，条件变化时判断随之更新。
 
@@ -121,7 +121,7 @@ Juudy 把实时行情、订单流、ICT 结构和策略研究放在同一张工�
 
 ### 09 · 自定义分析权重 / Bias Mix
 
-<a href="assets/screenshots/09-bias-mix.jpg"><img src="assets/screenshots/09-bias-mix.jpg" alt="Mix 面板中的新闻与技术权重、时间衰减和分类权重" width="100%"></a>
+<a href="assets/screenshots/09-bias-mix-ui.jpg"><img src="assets/screenshots/09-bias-mix-ui.jpg" alt="Mix 面板中的新闻与技术权重、时间衰减和分类权重" width="100%"></a>
 
 用 Fixed 或 Schedule 配置宏观事件与技术面的占比，并调整事件影响的时间衰减、分类权重和判断阈值。无重大新闻时，界面明确显示 Tech 100%，不强行给新闻凑分。
 
@@ -133,7 +133,7 @@ Juudy 把实时行情、订单流、ICT 结构和策略研究放在同一张工�
 
 ### 10 · 指标教学与参数 / Learn the indicators
 
-<a href="assets/screenshots/10-indicator-guide.jpg"><img src="assets/screenshots/10-indicator-guide.jpg" alt="指标说明、分步教学演示与参数控件" width="100%"></a>
+<a href="assets/screenshots/10-indicator-guide-ui.jpg"><img src="assets/screenshots/10-indicator-guide-ui.jpg" alt="指标说明、分步教学演示与参数控件" width="100%"></a>
 
 不熟悉一个指标时，直接打开它的说明，结合分步演示理解图形、数值与状态，再按需要调整参数。教学演示有 **Demo** 标识，与真实行情分开。
 
