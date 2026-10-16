@@ -4,14 +4,27 @@
 
 ### 看价格，也看价格背后的成交与结构。
 
-**CME 股指期货桌面工作台 · macOS**<br>
+**CME 股指期货桌面工作台 · Windows / macOS**<br>
 Price, order flow and market structure — in one workspace.
 
-[下载 / Download](https://github.com/winnerway-boys/juudy/releases/latest) · [功能图览 / Product tour](#product-tour) · [开始使用 / Get started](#get-started) · [English](#english)
+[下载 / Download](#download) · [功能图览 / Product tour](#product-tour) · [开始使用 / Get started](#get-started) · [English](#english)
 
-**MNQ · NQ · MES · ES**　／　**Apple silicon**　／　**中文 · English**
+**MNQ · NQ · MES · ES**　／　**Windows x64 · Apple silicon**　／　**中文 · English**
 
 </div>
+
+<a id="download"></a>
+
+## 下载 / Download
+
+**[⬇ Windows：下载安装 EXE](https://github.com/winnerway-boys/juudy/releases/download/v1.2.0-windows-20261016/Juudy-1.2.0-setup.exe)**　·　**[⬇ macOS：下载 DMG](https://github.com/winnerway-boys/juudy/releases/download/v1.1.0/Juudy-1.1.0.dmg)**
+
+| 平台 / Platform | 公开版本 / Version | 系统要求 / Requirements | 发布说明 / Release notes |
+| :--- | :--- | :--- | :--- |
+| **Windows** | **1.2.0 · 2026-10-16** | Windows 11 / Windows 10 22H2，64 位 x64 | [中文增强与 K 线倒计时 / Chinese UI & candle countdown](https://github.com/winnerway-boys/juudy/releases/tag/v1.2.0-windows-20261016) |
+| **macOS** | **1.1.0** | macOS 15+，Apple silicon（M1+） | [macOS 发布说明 / Release notes](https://github.com/winnerway-boys/juudy/releases/tag/v1.1.0) |
+
+Windows 安装包约 **235 MiB**（246,532,458 字节）；[SHA256 校验文件](https://github.com/winnerway-boys/juudy/releases/download/v1.2.0-windows-20261016/Juudy-1.2.0-setup.exe.sha256)。选用对应平台的下载链接；两个平台的公开版本号可能不同。 / Choose the download for your operating system; public version numbers may differ by platform.
 
 <a href="assets/screenshots/02-multi-chart-ui.jpg"><img src="assets/screenshots/02-multi-chart-ui.jpg" alt="Juudy 六宫格：主图、Trend、Order Flow、Big Prints、FVG 与 SMC 同屏" width="100%"></a>
 
@@ -23,7 +36,7 @@ Juudy 把实时行情、订单流、ICT 结构和策略研究放在同一张工�
 | :--- | :--- | :--- |
 | Candles · Big Prints · Footprint · CVD | 多图布局 · Trend · FVG · SMC | AI 写 Python · 沙盒检查 · 实时 Sim |
 
-> **截图版本：Juudy 1.2.0（机主版实机）**。公开安装包版本请以 [Releases](https://github.com/winnerway-boys/juudy/releases/latest) 为准；少量设置入口因版本不同而异。图中行情是截图时的市场状态，策略结果标记为 **Sim**，不代表真实成交或收益承诺。
+> **截图版本：Juudy 1.2.0（机主版实机）**。公开安装包版本请以 [Releases](https://github.com/winnerway-boys/juudy/releases) 为准；少量设置入口因版本不同而异。图中行情是截图时的市场状态，策略结果标记为 **Sim**，不代表真实成交或收益承诺。
 
 <a id="product-tour"></a>
 
@@ -145,21 +158,22 @@ Juudy 把实时行情、订单流、ICT 结构和策略研究放在同一张工�
 
 | 准备 | 要求 |
 | :--- | :--- |
+| Windows | Windows 11 或 Windows 10 22H2，64 位 x64（Intel / AMD） |
 | Mac | macOS 15 及以上，Apple 芯片（M1 及以后） |
 | CME 行情 | **TopstepX 账户 + ProjectX API 订阅**；当前不支持其他公司的账户 |
 | AI 工坊 | 自己的 AI API Key，例如 DeepSeek、智谱 GLM、火山方舟、通义千问 |
 
-1. 从 [Releases](https://github.com/winnerway-boys/juudy/releases/latest) 下载 DMG，打开后把 Juudy 拖进「应用程序」。
+1. 根据电脑系统安装：**Windows** 用户[下载 EXE](https://github.com/winnerway-boys/juudy/releases/download/v1.2.0-windows-20261016/Juudy-1.2.0-setup.exe)，双击 `Juudy-1.2.0-setup.exe`，按安装向导完成安装；**Mac** 用户[下载 DMG](https://github.com/winnerway-boys/juudy/releases/download/v1.1.0/Juudy-1.1.0.dmg)，打开后把 Juudy 拖进「应用程序」。
 2. 首次打开如被 macOS 拦截，可在「系统设置 → 隐私与安全性」查看提示，确认文件来自本仓库后点「仍要打开」。
 3. 按应用中的向导接入 AI 和 ProjectX，步骤中附有看图教程。未接入的功能暂不可用，可稍后补配。
 
-GitHub 无法访问或下载较慢时，请使用适合自己网络环境的访问方式。每个安装包的 SHA256 均列在 Release 中，可用 `shasum -a 256 Juudy-版本号.dmg` 核对。
+GitHub 无法访问或下载较慢时，请使用适合自己网络环境的访问方式。每个安装包的 SHA256 均列在对应平台的 Release 中。Windows 可在 PowerShell 中运行 `Get-FileHash .\Juudy-1.2.0-setup.exe -Algorithm SHA256`；Mac 可运行 `shasum -a 256 Juudy-1.1.0.dmg`，与发布页提供的校验值核对。
 
 ### 试用、授权与反馈
 
-每个版本可免费试用 **14 天**。到期后，将软件内的**申请码**发邮件至 **996032777@qq.com**，收到解锁码后粘贴到软件中。解锁码仅适用于申请时的那台 Mac 和那个版本。
+每个版本可免费试用 **14 天**。到期后，将软件内的**申请码**发邮件至 **996032777@qq.com**，收到解锁码后粘贴到软件中。解锁码仅适用于申请时的那台电脑和那个版本。
 
-问题反馈：应用内「设置 → 问题反馈」，或邮件 **996032777@qq.com**。Windows 版开发中。
+问题反馈：应用内「设置 → 问题反馈」，或邮件 **996032777@qq.com**。
 
 <a id="english"></a>
 
@@ -168,23 +182,24 @@ GitHub 无法访问或下载较慢时，请使用适合自己网络环境的访�
 
 ### What you need
 
-- macOS 15 or later on an Apple-silicon Mac (M1 or newer).
+- **Windows:** Windows 11 or Windows 10 22H2, 64-bit x64 (Intel / AMD).
+- **Mac:** macOS 15 or later on an Apple-silicon Mac (M1 or newer).
 - A **TopstepX account with a ProjectX API subscription**. Other firms' accounts, including Lucid, Apex, Tradeify and TakeProfitTrader, are not supported.
 - Your own AI API key for the AI Strategy Studio, for example DeepSeek, Zhipu GLM, Volcano Ark or Qwen.
 
 ### Install
 
-1. Download the DMG from [Releases](https://github.com/winnerway-boys/juudy/releases/latest) and drag Juudy into Applications.
+1. Choose your platform: **Windows** — [download the EXE](https://github.com/winnerway-boys/juudy/releases/download/v1.2.0-windows-20261016/Juudy-1.2.0-setup.exe), open `Juudy-1.2.0-setup.exe`, and follow the installer. **Mac** — [download the DMG](https://github.com/winnerway-boys/juudy/releases/download/v1.1.0/Juudy-1.1.0.dmg) and drag Juudy into Applications.
 2. If macOS blocks the first launch, check System Settings → Privacy & Security. Confirm that the file came from this repository before choosing **Open Anyway**.
 3. Follow the illustrated in-app setup wizard. Connections can be completed later; features that need an unconfigured service remain unavailable.
 
-Screenshots show the **1.2.0 owner build**. Check Releases for the publicly available installer version. The screenshots are product demonstrations, not a performance record. All strategy results are **simulated**.
+Screenshots show the **1.2.0 owner build**. Check the [download table](#download) for the publicly available version on each platform. The screenshots are product demonstrations, not a performance record. All strategy results are **simulated**.
 
 ### Trial and support
 
-Each version includes a **14-day free trial**. Email the in-app request code to **996032777@qq.com** for an unlock code valid for that Mac and version. Use Settings → Feedback or the same email for support. A Windows version is in development.
+Each version includes a **14-day free trial**. Email the in-app request code to **996032777@qq.com** for an unlock code valid for that computer and version. Use Settings → Feedback or the same email for support.
 
-Every Release includes the installer's SHA256 checksum. Verify it with `shasum -a 256 Juudy-<version>.dmg`.
+Each platform's Release includes the installer's SHA256 checksum. On Windows, run `Get-FileHash .\Juudy-1.2.0-setup.exe -Algorithm SHA256` in PowerShell. On Mac, run `shasum -a 256 Juudy-1.1.0.dmg`. Compare the result with the checksum on the corresponding Release.
 
 </details>
 
